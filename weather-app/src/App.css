@@ -1,0 +1,182 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f2f5;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+/* Info Button styles */
+.info-button {
+  position: absolute; /* Absolute positioning within the container */
+  top: 20px;
+  left: 20px;
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10; /* Ensures button is above other content */
+}
+
+.info-button:hover {
+  background-color: #0056b3;
+}
+
+.dropdown {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: absolute;
+  left: 10px;
+  top: 40px;
+  z-index: 100;
+}
+
+/* Header styles */
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Location Input Section */
+.location {
+  margin-bottom: 20px;
+}
+
+/* Middle Weather Display Section */
+.middle {
+  margin: 20px 0;
+}
+
+.weather-display {
+  text-align: center;
+}
+
+.current-weather {
+  margin-bottom: 20px;
+}
+
+.current-temp {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between temp and icon */
+}
+
+/* Forecast Table */
+.forecast-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.forecast-table th,
+.forecast-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.forecast-table th {
+  background-color: #f0f2f5;
+}
+
+/* Bottom Date Navigation Section */
+.bottom {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* Space above the date navigation section */
+}
+
+.date-button {
+  padding: 10px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100px; /* Fixed width for consistent button size */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date-button:hover {
+  background-color: #0056b3;
+}
+
+.date-button span {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
